@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_form_inputs",
+  "info": {
+    "displayName": "Input"
+  },
+  "options": {},
+  "attributes": {
+    "label_en": {
+      "type": "string",
+      "required": true
+    },
+    "required": {
+      "type": "boolean",
+      "required": true
+    },
+    "label_ja": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

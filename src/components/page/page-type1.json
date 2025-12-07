@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_page_type1s",
+  "info": {
+    "displayName": "PageType1",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "detail_en": {
+      "type": "blocks"
+    },
+    "title_ja": {
+      "type": "string",
+      "required": false
+    },
+    "detail_ja": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

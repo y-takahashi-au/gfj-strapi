@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_form_check_boxes",
+  "info": {
+    "displayName": "checkBox"
+  },
+  "options": {},
+  "attributes": {
+    "label_en": {
+      "type": "string",
+      "required": true
+    },
+    "label_ja": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

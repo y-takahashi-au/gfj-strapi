@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "dataList": {
+      "type": "component",
+      "component": "list.data-list",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    },
+    "description_en": {
+      "type": "blocks",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "event_submit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-submit.event-submit",
+      "inversedBy": "event"
+    },
+    "title_ja": {
+      "type": "string",
+      "required": true
+    },
+    "description_ja": {
+      "type": "blocks"
+    }
+  }
+}

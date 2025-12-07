@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additional_pages",
+  "info": {
+    "singularName": "additional-page",
+    "pluralName": "additional-pages",
+    "displayName": "AdditionalPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "pages": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "page.page-type1"
+      ]
+    },
+    "parent_additional_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::additional-page.additional-page",
+      "inversedBy": "additional_pages"
+    },
+    "additional_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::additional-page.additional-page",
+      "mappedBy": "parent_additional_page"
+    },
+    "title_en": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "unique": true
+    }
+  }
+}

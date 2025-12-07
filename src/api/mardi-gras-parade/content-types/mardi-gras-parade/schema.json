@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "mardi_gras_parades",
+  "info": {
+    "singularName": "mardi-gras-parade",
+    "pluralName": "mardi-gras-parades",
+    "displayName": "MardiGrasParade"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isOpen": {
+      "type": "boolean"
+    }
+  }
+}

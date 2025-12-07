@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_submits",
+  "info": {
+    "singularName": "event-submit",
+    "pluralName": "event-submits",
+    "displayName": "EventSubmit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "form": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "form.select-box",
+        "form.input",
+        "form.check-box"
+      ],
+      "required": true
+    },
+    "expired": {
+      "type": "datetime",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
+    },
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event",
+      "mappedBy": "event_submit"
+    }
+  }
+}

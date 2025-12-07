@@ -9,39 +9,20 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
-    "name": {
+    "name_en": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "required": true,
       "unique": false
     },
     "order": {
       "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
       "required": true,
       "unique": true
     },
     "headshot": {
       "type": "media",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
       "multiple": true,
       "required": true,
       "allowedTypes": [
@@ -49,13 +30,15 @@
         "images"
       ]
     },
-    "description": {
-      "type": "blocks",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+    "description_en": {
+      "type": "blocks"
+    },
+    "name_ja": {
+      "type": "string",
+      "required": true
+    },
+    "description_ja": {
+      "type": "blocks"
     }
   }
 }

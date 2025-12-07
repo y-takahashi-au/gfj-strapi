@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_list_data_lists",
+  "info": {
+    "displayName": "DataList",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "dataContant": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "config": {}
+}

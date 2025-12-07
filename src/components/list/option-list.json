@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_list_option_lists",
+  "info": {
+    "displayName": "OptionList"
+  },
+  "options": {},
+  "attributes": {
+    "optionContent": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
